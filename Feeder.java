@@ -31,5 +31,5 @@ public class Feeder {
     {
         currentFood = c;
     }
-
+    public Feeder() {}
 }
