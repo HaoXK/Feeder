@@ -9,9 +9,14 @@ public class Main
       //System.out.println(f.currentFood);
       System.out.println(f.getCurrentFood());
       System.out.println(g.getCurrentFood());
-      double random = Math.random()* 10;
+      int random = (int) (Math.random() * 43 + 10);
       System.out.println(random);
-      int random = (int) Math.random()* 10;
-      System,out.println(random)
+      System.out.println(Math.random() < 0.05);
+      g.simulateOneDay(12);
+      System.out.println(g.getCurrentFood());
+
+      Feeder h = new Feeder(1000);
+      h.simulateOneDay(22);
+      System.out.println(h.getCurrentFood());
     }
 }
